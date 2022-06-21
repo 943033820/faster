@@ -1,0 +1,541 @@
+.portal-container{
+  font-family: 'Chakra Petch';
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom:20px ;
+}
+@media screen and (max-width:2000px) {
+  .portal-container{
+    padding-left:80px;
+    padding-right:80px;
+  }
+}
+@media screen and (min-width:2001px) {
+  .portal-container{
+    padding-left:calc(50% - 770px);
+    padding-right:calc(50% - 770px);
+  }
+}
+.portal-headContainer{
+  height: 60px;
+  width: 100%;
+}
+.head-titleContainer{
+  float: left;
+}
+.head-titleContainer div{
+  float: left;
+}
+.head-logo{
+  width: 156px;
+  height: 46px;
+  background: url(./assets/logo.svg);
+}
+.head-wallelt{
+  box-sizing: border-box;
+  width: 180px;
+  height: 45px;
+  background: url(./assets/walletbg.svg);
+  border-radius: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 18px;
+}
+.head-link{
+  float: right;
+  width: 40px;
+  height: 58px;
+  border-radius: 50%;
+  margin-top: 2px;
+  background: #262434;
+  cursor: pointer;
+  position: relative;
+  background: url(./assets/linkbg.png)
+}
+.head-twitter:hover .twitter-svg{
+  background: url(./assets/twitter_hover.svg);
+}
+.head-opensea:hover .os-svg{
+  background: url(./assets/os_hover.svg);
+}
+.head-whitepaper:hover .wp-svg{
+  background: url(./assets/dc_hover.svg);
+}
+.head-music{
+  background: url(./assets/music.svg);
+  margin-right: 40px;
+  width: 34px;
+  height: 49px;
+}
+.head-music:hover{
+  animation: rotate5 5s ease-in-out;
+}
+
+@keyframes rotate5{
+  0%{
+      -webkit-transform:rotate(0deg);
+  }
+  20%{
+      -webkit-transform:rotate(30deg);
+  }
+  40%{
+      -webkit-transform:rotate(-45deg);
+  }
+  60%{
+      -webkit-transform:rotate(-30deg);
+  }
+  80%{
+      -webkit-transform:rotate(30deg);
+  }
+  100%{
+      -webkit-transform:rotate(45deg);
+  }
+}
+.head-twitter{
+  margin-right:40px;
+}
+.twitter-svg{
+  height:17px;
+  width: 22px;
+  margin-top: 13px;
+  margin-left: 9px;
+  background: url(./assets/twitter.svg);
+}
+.os-svg{
+  height:20px;
+  width: 22px;
+  margin-left:9px;
+  margin-top: 10px;
+  background: url(./assets/os.svg);
+}
+.wp-svg{
+  height:18px;
+  width: 24px;
+  margin-left:8px;
+  margin-top: 11px;
+  background: url(./assets/dc.svg);
+}
+.head-opensea{
+  margin-right:20px; 
+}
+.head-whitepaper{
+  margin-right:20px; 
+}
+.portal-ColorContainer1{
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  right:40%;
+  background: #FB37FF;
+  filter: blur(100px);
+  z-index: 2;
+  animation:mymove 5s infinite;
+  -webkit-animation:mymove 5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+.portal-ColorContainer2{
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  right:80px;
+  background: #18B2DE;
+  filter: blur(100px);
+  z-index: 2;
+  animation:mymove2 5s infinite;
+  -webkit-animation:mymove2 5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+@media screen and (min-width:2201px) {
+  .portal-ColorContainer2{
+    right:calc(50% - 770px);
+  }
+}
+
+@keyframes mymove
+{
+	0% {opacity:0;}
+	100% {opacity:100%;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	100% {opacity:100%;}
+}
+@keyframes mymove2
+{
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes mymove2 /*Safari and Chrome*/
+{
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+.portal-ContentContainer{
+   display: flex;
+   flex-flow: row wrap;
+   margin-top: 45px;
+   width: 100%;
+}
+.portal-ContentLeft{
+   width:50%;
+}
+
+.portal-ContentRight{
+  width:50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.yellowtitle{
+  color: #E8B840;
+}
+.content-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 118px;
+  color: #FFFFFF;
+  clear: both;
+}
+.content-title div{
+  float: left;
+}
+.rec{
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 59px;
+}
+.content-desscription{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 68px;
+  text-transform: capitalize;
+  color: #E2E2E2;
+  margin-top: 48px;
+  clear: both;
+}
+.content-desscription ul{
+  list-style: none;
+  padding-left: 0px;
+}
+.mint-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  height: 60px;
+  left: 80px;
+  top: 676px;
+  background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 46px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -1px;
+  float: left;
+}
+.mint-button:hover{
+  background: linear-gradient(103.91deg, #B46BF8 21.01%, rgba(66, 146, 253, 0.8) 100%);
+}
+.join-dc-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-left: 58px;
+  width: 218px;
+  height: 60px;
+  background: url(./assets/discordbg.png);
+  border-radius: 12px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 46px;
+  color: #D7D7D7;
+}
+.join-dc-button-label{
+  margin-left: 10px;
+}
+.join-dc-button-img{
+  content: url(./assets/wp.svg);
+}
+.join-dc-button:hover{
+  color: #4A67CF;
+  background: url(./assets/discordbg_hover.png);
+}
+.join-dc-button:hover .join-dc-button-img{
+  content: url(./assets/wp_hover.svg);
+}
+.tokeninfo{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding-top: 53px;
+  height: 30px;
+  clear: both;
+  box-sizing: border-box;
+}
+.tokeninfo div{
+  float: left;
+  width: 218px;
+}
+.token-price {
+  
+}
+.token-total{
+  margin-left: 58px;
+}
+.box-container{
+  width:100%;
+  height:100%;
+}
+.gif-container{
+  width: 100%;
+  min-height: 609px;
+  background-image: url(./assets/fc.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.gif-contentRight{
+   position: absolute;
+   bottom: 26PX;
+   right: 28PX;
+}
+.gif-contentRight-top{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.gif-contentRight-heart{
+  width: 24px;
+  height: 24px;
+  background: url(./assets/heart.png);
+  margin-top: 6px;
+  float: right;
+  margin-right: 9px;
+  cursor: pointer;
+  animation: heartAnimate 1.33s ease-in-out infinite;
+}
+@keyframes heartAnimate {
+  0%,100%{transform:scale(1);}
+  10%,30%{transform:scale(0.9);}
+  20%,40%,60%,80%{transform:scale(1.1);}
+  50%,70%{transform:scale(1.1);}
+}
+.gif-contentRight-heart:hover{
+
+}
+.gif-contentRight-heartcount{
+  float: right;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E0E0E0;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.gif-contentLeft{
+  position: absolute;
+  bottom: 26PX;
+  left: 28PX;
+}
+.gif-leftpng{
+  float: left;
+}
+.gif-leftContent-container{
+  float: left;
+  margin-left: 12px;;
+}
+.gif-leftname{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+}
+.gif-leftprice{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D7D7D7;
+  margin-top: 6px;
+}
+
+.modal-background{
+   position: fixed;
+   z-index: 2;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   background: #000000;
+   opacity: 0.8;
+}
+.modalContainer{
+  position: fixed;
+  top: 16%;
+  left: calc(50% - 250px);
+  width: 514px;
+  height: 431px;
+  background: url(./assets/mintbg.png);
+  background-color: rgb(13,18,25);
+  border-radius: 35px;
+  z-index: 4;
+}
+.modal-head{
+  width: 100%;
+  height: 74px;
+  border-bottom:1px solid  rgba(153, 162, 174, 0.2);
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+.modal-title{
+  float: left;
+}
+.modal-close{
+  float: right;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  background: url(./assets/close.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-content{
+   padding: 30px 40px;
+}
+.content-counter{
+  display: flex;
+  justify-content:center;
+}
+.counter{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(./assets/countbg.png);
+  background-color: rgb(45,50,54);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.counter:hover{
+  background: #3F4449;
+}
+
+.counter-left{
+
+}
+.counter-center{
+   text-align: center;
+   width: 80px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 36px;
+}
+.counter-right{
+  
+}
+.content-line{
+  margin-top:20px;
+  clear: both;
+  height: 30px;
+}
+.content-line-label{
+  float: left;
+}
+.content-line-content{
+  float: right;
+}
+.freemint{
+  background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.subtotal{
+  background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 32px;
+}
+.content-mint-button{
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  border-radius: 16px;
+  line-height: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 48px;
+  cursor: pointer;
+}
+.content-mint-button:hover{
+  background: linear-gradient(103.91deg, #B46BF8 21.01%, rgba(66, 146, 253, 0.8) 100%);
+}
+.spinContainer{
+  color:#FFFFFF;
+}
+.wallet-content-line{
+  margin-top: 24px;
+  background: #141A24;
+  border: 2px solid #1C1F30;
+  border-radius: 10px;
+  color: #fff;
+  width: 458px;
+  height: 60px;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+.wallet-content-line:hover,#walletChoosed{
+  background-color: #212833;
+}
+
+.content-line-svg{
+   background-position: center;
+   float: left;
+}
+.metamask{
+  width: 30px;
+  content: url(./assets/metamask.svg);
+}
+.bitkeep{
+  width: 25px;
+  content: url(./assets/bitkeep.svg);
+}

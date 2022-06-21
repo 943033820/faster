@@ -1,0 +1,355 @@
+.portal-container{
+  font-family: 'Chakra Petch';
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom:20px ;
+}
+@media screen and (max-width:2000px) {
+  .portal-container{
+    padding-left:80px;
+    padding-right:80px;
+  }
+}
+@media screen and (min-width:2001px) {
+  .portal-container{
+    padding-left:calc(50% - 770px);
+    padding-right:calc(50% - 770px);
+  }
+}
+.portal-headContainer{
+  height: 60px;
+  width: 100%;
+}
+.head-titleContainer{
+  float: left;
+}
+.head-titleContainer div{
+  float: left;
+}
+.head-logo{
+  width: 156px;
+  height: 46px;
+  background: url(./assets/logo.svg);
+}
+.head-wallelt{
+  box-sizing: border-box;
+  width: 180px;
+  height: 45px;
+  background: url(./assets/walletbg.svg);
+  border-radius: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 18px;
+}
+.head-link{
+  float: right;
+  width: 40px;
+  height: 58px;
+  border-radius: 50%;
+  margin-top: 2px;
+  background: #262434;
+  cursor: pointer;
+  position: relative;
+  background: url(./assets/linkbg.png)
+}
+.head-twitter:hover .twitter-svg{
+  background: url(./assets/twitter_hover.svg);
+}
+.head-opensea:hover .os-svg{
+  background: url(./assets/os_hover.svg);
+}
+.head-whitepaper:hover .wp-svg{
+  background: url(./assets/dc_hover.svg);
+}
+.head-music{
+  background: url(./assets/music.svg);
+  margin-right: 40px;
+  width: 34px;
+  height: 49px;
+}
+.head-music:hover{
+  animation: rotate5 5s ease-in-out;
+}
+
+@keyframes rotate5{
+  0%{
+      -webkit-transform:rotate(0deg);
+  }
+  20%{
+      -webkit-transform:rotate(30deg);
+  }
+  40%{
+      -webkit-transform:rotate(-45deg);
+  }
+  60%{
+      -webkit-transform:rotate(-30deg);
+  }
+  80%{
+      -webkit-transform:rotate(30deg);
+  }
+  100%{
+      -webkit-transform:rotate(45deg);
+  }
+}
+.head-twitter{
+  margin-right:40px;
+}
+.twitter-svg{
+  height:17px;
+  width: 22px;
+  margin-top: 13px;
+  margin-left: 9px;
+  background: url(./assets/twitter.svg);
+}
+.os-svg{
+  height:20px;
+  width: 22px;
+  margin-left:9px;
+  margin-top: 10px;
+  background: url(./assets/os.svg);
+}
+.wp-svg{
+  height:18px;
+  width: 24px;
+  margin-left:8px;
+  margin-top: 11px;
+  background: url(./assets/dc.svg);
+}
+.head-opensea{
+  margin-right:20px; 
+}
+.head-whitepaper{
+  margin-right:20px; 
+}
+.portal-ColorContainer1{
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  right:40%;
+  background: #FB37FF;
+  filter: blur(100px);
+  z-index: 2;
+  animation:mymove 5s infinite;
+  -webkit-animation:mymove 5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+.portal-ColorContainer2{
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  right:80px;
+  background: #18B2DE;
+  filter: blur(100px);
+  z-index: 2;
+  animation:mymove2 5s infinite;
+  -webkit-animation:mymove2 5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+@media screen and (min-width:2201px) {
+  .portal-ColorContainer2{
+    right:calc(50% - 770px);
+  }
+}
+
+@keyframes mymove
+{
+	0% {opacity:0;}
+	100% {opacity:100%;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+	0% {opacity:0;}
+	100% {opacity:100%;}
+}
+@keyframes mymove2
+{
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+@-webkit-keyframes mymove2 /*Safari and Chrome*/
+{
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+
+
+
+
+
+.modal-background{
+   position: fixed;
+   z-index: 2;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   background: #000000;
+   opacity: 0.8;
+}
+.modalContainer{
+  position: fixed;
+  top: 16%;
+  left: calc(50% - 250px);
+  width: 514px;
+  height: 431px;
+  background: url(./assets/mintbg.png);
+  background-color: rgb(13,18,25);
+  border-radius: 35px;
+  z-index: 4;
+}
+.modal-head{
+  width: 100%;
+  height: 74px;
+  border-bottom:1px solid  rgba(153, 162, 174, 0.2);
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+.modal-title{
+  float: left;
+}
+.modal-close{
+  float: right;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  background: url(./assets/close.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-content{
+   padding: 30px 40px;
+}
+.counter-center{
+   text-align: center;
+   width: 80px;
+   height: 50px;
+   line-height: 50px;
+   font-size: 36px;
+}
+.counter-right{
+  
+}
+.content-line{
+  margin-top:20px;
+  clear: both;
+  height: 30px;
+}
+.content-line-label{
+  float: left;
+}
+.content-line-content{
+  float: right;
+}
+.spinContainer{
+  color:#FFFFFF;
+}
+.wallet-content-line{
+  margin-top: 24px;
+  background: #141A24;
+  border: 2px solid #1C1F30;
+  border-radius: 10px;
+  color: #fff;
+  width: 458px;
+  height: 60px;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+.wallet-content-line:hover,#walletChoosed{
+  background-color: #212833;
+}
+
+.content-line-svg{
+   background-position: center;
+   float: left;
+}
+.metamask{
+  width: 30px;
+  content: url(./assets/metamask.svg);
+}
+.bitkeep{
+  width: 25px;
+  content: url(./assets/bitkeep.svg);
+}
+
+.line-container{
+  height: 70px;
+  width: 100%;
+  padding: 12px 0px;
+}
+.line-img{
+  width: 35px;
+  height: 35px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  float: left;
+  margin-top: 5px;
+}
+.line-img img{
+  height: 100%;
+  width: 100%;
+}
+.line-content{
+  float: left;
+  margin-left: 15px;
+}
+.line-content-top div{
+  float: left;
+}
+.line-content-top-name{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.line-content-top-count{
+  background-color:rgb(229, 229, 229);
+  margin-left:12px;
+  color:rgb(19, 34, 122);
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 4px;
+}
+.line-content-bottom{
+  float: left;
+}
+.line-content-bottom-mintprice{
+  float: left;
+}
+.line-content-bottom-price{
+  float: left;
+}
+.line-link{
+  float: right;
+}
+.line-link div{
+  float: right;
+  margin-right:10px;
+  padding: 3px;
+  height: 24px;
+  width: 24px;
+  background-color: rgb(229, 229, 229);
+  border-radius: 50%;
+  cursor: pointer;
+}
